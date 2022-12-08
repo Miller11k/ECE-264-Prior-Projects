@@ -4,7 +4,7 @@ A collection of prior homework projects from Purdue ECE 264 homeworks. Not to be
 ## List of Homeworks, Topics, and Grades:
 
 
-| Homework     | Topic                     | Grade    |
+| Homework     | Assignment                     | Grade    |
 | ------------ | ------------------------- | -------- |
 | [HW 01](/HW%2001) | Git, Make, and GCC | 100%|
 | [HW 02](/HW%2002) | Who Gets the Cake | 100%|
