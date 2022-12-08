@@ -4,7 +4,7 @@ A collection of prior homework projects from Purdue ECE 264 Homeworks
 <ins>**List of Homeworks and Topics:**</ins>
 | Homework     | Topic                     | Grade    |
 | ------------ | ------------------------- | -------- |
-| [1](https://github.com/Miller11k/ECE-264-Prior-Projects/tree/main/HW1)            | git and make and gcc      | 100%     |
+| [HW 1](/HW1)         | git and make and gcc      | 100%     |
 | 2            | structs                   | 100%     |
 | 3            | structs                   | 100%     |
 | 4            | structs                   | 100%     |
