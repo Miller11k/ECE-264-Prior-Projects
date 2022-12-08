@@ -1,0 +1,33 @@
+Your final_ver works perfect!
+
+-bash-4.2$ make test
+gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DTEST_READ -DTEST_WRITE -DTEST_QSORT -DTEST_SORTID -DTEST_SORTNAME -DTEST_SORTED -c hw5.c 
+gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DTEST_READ -DTEST_WRITE -DTEST_QSORT -DTEST_SORTID -DTEST_SORTNAME -DTEST_SORTED -c student.c 
+gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DTEST_READ -DTEST_WRITE -DTEST_QSORT -DTEST_SORTID -DTEST_SORTNAME -DTEST_SORTED hw5.o student.o -o hw5 
+./hw5 testcases/input1 id1 name1
+./hw5 testcases/input2 id2 name2
+./hw5 testcases/input3 id3 name3
+./hw5 testcases/input4 id4 name4
+-bash-4.2$ make testid
+./hw5 testcases/input1 id1 name1
+./hw5 testcases/input2 id2 name2
+./hw5 testcases/input3 id3 name3
+./hw5 testcases/input4 id4 name4
+diff -w id1 expected/id1
+diff -w id2 expected/id2
+diff -w id3 expected/id3
+diff -w id4 expected/id4
+-bash-4.2$ make testname
+./hw5 testcases/input1 id1 name1
+./hw5 testcases/input2 id2 name2
+./hw5 testcases/input3 id3 name3
+./hw5 testcases/input4 id4 name4
+diff -w name1 expected/name1
+diff -w name2 expected/name2
+diff -w name3 expected/name3
+diff -w name4 expected/name4
+-bash-4.2$ make memory
+valgrind --tool=memcheck --leak-check=yes --verbose --log-file=log1 ./hw5 testcases/input1 id1 name1
+valgrind --tool=memcheck --leak-check=yes --verbose --log-file=log2 ./hw5 testcases/input2 id2 name2
+valgrind --tool=memcheck --leak-check=yes --verbose --log-file=log3 ./hw5 testcases/input3 id3 name3
+valgrind --tool=memcheck --leak-check=yes --verbose --log-file=log4 ./hw5 testcases/input4 id4 name4
