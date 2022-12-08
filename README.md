@@ -1,7 +1,7 @@
 # ECE-264-Prior-Projects
 A collection of prior homework projects from Purdue ECE 264 Homeworks
 
-<font size = "20"><ins>**List of Homeworks and Topics:**</ins></font>
+##<ins>**List of Homeworks and Topics:**</ins>
 | Homework     | Topic                     | Grade    |
 | ------------ | ------------------------- | -------- |
 | [HW 1](/HW1) | git and make and gcc | 100%|
