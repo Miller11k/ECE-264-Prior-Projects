@@ -1,3 +1,0 @@
-All testcases passed! :)
-
-Your final_ver works perfect!
