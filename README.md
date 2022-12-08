@@ -1,5 +1,5 @@
 # ECE-264-Prior-Projects
-A collection of prior homework projects from Purdue ECE 264 homeworks. Not to be copied in academic use, this is only for professional use.
+A collection of prior homework projects from Purdue ECE 264 homeworks. Not to be copied in academic use, for professional use only.
 
 ## List of Homeworks, Topics, and Grades:
 
