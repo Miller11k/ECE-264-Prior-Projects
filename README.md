@@ -5,8 +5,8 @@ A collection of prior homework projects from Purdue ECE 264 Homeworks
 | Homework     | Topic                     | Grade    |
 | ------------ | ------------------------- | -------- |
 | [HW 1](/HW1)         | git and make and gcc      | 100%     |
-| 2            | structs                   | 100%     |
-| 3            | structs                   | 100%     |
+| [HW 2](/HW2)         | structs                   | 100%     |
+| [HW 3](/HW3)         | structs                   | 100%     |
 | 4            | structs                   | 100%     |
 | 5            | structs                   | 100%     |
 | 6            | structs                   | 100%     |
