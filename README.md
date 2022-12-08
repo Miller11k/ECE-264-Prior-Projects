@@ -6,7 +6,7 @@ A collection of prior homework projects from Purdue ECE 264 homeworks. Not to be
 
 | Homework     | Topic                     | Grade    |
 | ------------ | ------------------------- | -------- |
-| [HW 01](/HW-01) | Git, Make, and GCC | 100%|
+| [HW 01](/HW%2001) | Git, Make, and GCC | 100%|
 | [HW 02](/HW02) | Who Gets the Cake | 100%|
 | [HW 03](/HW03) | Structs | 100%|
 | [HW 04](/HW04) | Function Pointer | 100%|
