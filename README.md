@@ -1,14 +1,14 @@
 # ECE-264-Prior-Projects
-A collection of prior homework projects from Purdue ECE 264 homeworks. Not to be copied in academic use, for the pure use of demonstrating my knowledge.
+A collection of prior homework projects from Purdue ECE 264 homeworks. Not to be copied in academic use, this is only for professional use.
 
 ## List of Homeworks, Topics, and Grades:
 
 
 | Homework     | Topic                     | Grade    |
 | ------------ | ------------------------- | -------- |
-| [HW 1](/HW1) | git and make and gcc | 100%|
+| [HW 1](/HW1) | Git, Make, and GCC | 100%|
 | [HW 2](/HW2) | Who Gets the Cake | 100%|
-| [HW 3](/HW3) | structs | 100%|
+| [HW 3](/HW3) | Structs | 100%|
 | [HW 4](/HW3) | Function Pointer | 100%|
 | [HW 5](/HW3) | QSort | 100%|
 | [HW 6](/HW3) | Merge Sort | 100%|
