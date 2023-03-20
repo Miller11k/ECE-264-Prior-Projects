@@ -32,6 +32,19 @@ void printListNode(ListNode * head)
 // the linked list must end with NULL
 ListNode * createList(int valn)
 {
+  // Initialize Empty Linked List
+  ListNode *head = NULL;
+  ListNode *nextVal = NULL;
+  //Insert Nodes to A Linked List
+  valn--;
+  while(valn >= 0){
+    nextVal = malloc(sizeof(ListNode));
+    nextVal -> value = valn;
+    nextVal -> next = head;
+    head = nextVal;
+    --valn;
+  }
+  return(head);
 }
 #endif
 
@@ -46,12 +59,40 @@ ListNode * createList(int valn)
 // print the values of the nodes to be deleted
 void eliminate(ListNode * head, int valk)
 {
-#ifdef DEBUG
-  // this #ifdef ... #endif should be inside the condition *BEFORE* a
-  // node' value is printed and it is deleted
-  ListNode * todelete = p;
-  printListNode (todelete); 
-#endif
+ListNode *countNode;
+countNode = head;
+int num_left = 0;
+
+while((head -> next) != NULL){
+  num_left = valk;
+  while(num_left > 0){
+    if(countNode != NULL){
+      --num_left;
+    }
+    ListNode *temp = countNode -> next;
+    if(num_left == 0){
+      #ifdef DEBUG
+      // this #ifdef ... #endif should be inside the condition *BEFORE* a
+      // node' value is printed and it is deleted
+      ListNode * todelete = countNode;
+      printListNode (todelete);
+
+      #endif
+
+      printf("%d\n", countNode -> value);
+      head = deleteNode(head, countNode);
+    }
+    if(temp != NULL){
+      countNode = temp;
+    }
+    else{
+      countNode = head;
+    }
+    
+  }
+}
+printf("%d\n", head -> value);
+free(head);
 }
 #endif
 
@@ -71,6 +112,30 @@ void eliminate(ListNode * head, int valk)
 // the head). If this occurs, return the second node of the list.
 ListNode * deleteNode(ListNode * head, ListNode * todelete)
 {
+  if(head == NULL){
+    return NULL;
+  }
+
+  if(todelete == NULL){
+    return head;
+  }
+
+  if(head == todelete){
+    ListNode *newHead = head -> next;
+    free(head);
+    return newHead;
+  }
+  
+  ListNode *p = head;
+  while((p != NULL) && ((p -> next) != todelete)){
+    p = (p -> next);
+  }
+
+  if(p != NULL){
+    (p -> next) = (todelete -> next);
+    free(todelete);
+  }
+  return head;
 }
 #endif
 
